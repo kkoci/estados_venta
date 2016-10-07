@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+      <record id="view_estado_form" model="ir.ui.view">
+          <field name="name">estados.venta.form</field>
+          <field name="model">estados</field>
+          <field name="arch" type="xml">
+              <form string="Estados">
+                  <group>
+                    <field name="estado"/>
+                    <field name="numero"/>
+                    <field name="descripcion"/>
+                  </group>
+              </form>
+          </field>
+      </record>
+
+      <record id="view_estado_tree" model="ir.ui.view">
+          <field name="name">estados.venta.tree</field>
+          <field name="model">estados</field>
+          <field name="arch" type="xml">
+              <tree string="Estados">
+                    <field name="estado"/>
+                    <field name="numero"/>
+                    <field name="descripcion"/>
+              </tree>
+          </field>
+      </record>
+
+      <record model="ir.actions.act_window" id="estados_venta">
+          <field name="name">Estados</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">estados</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+      <menuitem name="Estados del pedido" action="estados_venta" id="menu_action_estados_venta" parent="base.menu_base_partner"/>
+</openerp>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="estado_form_view">
+            <field name="name">sale.order.estados.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <field name='partner_id' position="after">
+                    <field name="estado_del_pedido"/>
+                </field>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="estado_tree_view">
+            <field name="name">sale.order.estados.tree</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_tree" />
+            <field name="arch" type="xml">
+                <field name='partner_id' position="after">
+                    <field name="estado_del_pedido"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>
