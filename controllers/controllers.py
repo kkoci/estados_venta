@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from openerp import http
+from odoo import http
 
 # class EstadosVenta(http.Controller):
 #     @http.route('/estados_venta/estados_venta/', auth='public')
