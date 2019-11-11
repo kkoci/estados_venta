@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
       <record id="view_estado_form" model="ir.ui.view">
           <field name="name">estados.venta.form</field>
           <field name="model">estados</field>
@@ -34,4 +34,4 @@
           <field name="view_mode">tree,form</field>
       </record>
       <menuitem name="Estados del pedido" action="estados_venta" id="menu_action_estados_venta" parent="base.menu_base_partner"/>
-</openerp>
+<odoo>
