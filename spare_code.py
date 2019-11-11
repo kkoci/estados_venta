@@ -1,16 +1,13 @@
-
-def fst_func():
-try:
-    with open('Mycsv.csv') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for i,row in enumerate(reader):
-            rowlist = [row['1st row'], row['2nd row'], row['3rd row'], row['4th row'], row['5th row']]
-            print(sorted(rowlist))
-            if(i >= 4):
-                break
-
-
-
+# 
+# def fst_func():
+# try:
+#     with open('Mycsv.csv') as csvfile:
+#         reader = csv.DictReader(csvfile)
+#         for i,row in enumerate(reader):
+#             rowlist = [row['1st row'], row['2nd row'], row['3rd row'], row['4th row'], row['5th row']]
+#             print(sorted(rowlist))
+#             if(i >= 4):
+#                 break
 import csv
 from datetime import datetime
 
