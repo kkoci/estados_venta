@@ -1,7 +1,7 @@
 import csv
 
 # open the file in universal line ending mode 
-with open('MobilePhoneMasts.csv', 'rU') as infile:
+with open('MobilePhoneMasts.csv', 'r') as infile:
   # read the file as a dictionary for each row ({header : value})
   reader = csv.DictReader(infile)
   data = {}
